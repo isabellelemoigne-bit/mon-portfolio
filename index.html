@@ -10,7 +10,99 @@
   </head>
   <body>
     <!-- Votre contenu va ici -->
+    <header class="navbar" id="navbar">
+      <nav class="nav-container">
+        <!-- Votre prénom/logo — remplacez le texte -->
+        <a href="#hero" class="nav-logo">isabelle<span>.</span></a>
 
-    <script src="assets/js/script.js"></script>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#skills">Compétences</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <!-- Bouton burger pour mobile (3 traits) -->
+        <button class="burger" id="burger" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+    <section class="hero" id="hero">
+      <div class="hero-content">
+        <p class="hero-subtitle">Bonjour, je suis</p>
+        <h1 class="hero-title">
+          isabelle <span class="highlight">le moigne</span>
+        </h1>
+        <p class="hero-role">technicienne maintenance en informatique</p>
+        <p class="hero-description">méthodique et rigoureuse</p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+          <a href="#contact" class="btn btn-outline">Me contacter</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <!-- Votre photo — en attendant utilisez picsum.photos -->
+        <img
+          src="https://picsum.photos/400/400?random=1"
+          alt="Photo de [votre prénom]"
+          class="profile-photo"
+        />
+      </div>
+    </section>
+     <section class="about" id="about">
+    <div class="container">
+
+      <h2 class="section-title">À propos <span class="highlight">de moi</span></h2>
+
+      <div class="about-grid">
+
+        <div class="about-text">
+          <!--
+          Racontez votre histoire en 3-5 phrases.
+          D'où venez-vous ? Pourquoi le numérique ?
+          Qu'est-ce qui vous motive ?
+          -->
+          <p>
+            [Votre texte de présentation ici.
+            Parlez de votre parcours, de votre reconversion,
+            de ce qui vous a amené vers le numérique.]
+          </p>
+          <p>
+            [Une deuxième phrase sur vos centres d'intérêt
+            ou vos objectifs professionnels.]
+          </p>
+
+          <!-- Lien vers un CV PDF — mettez votre propre lien -->
+          <a href="#" class="btn btn-primary" download>
+            Télécharger mon CV
+          </a>
+        </div>
+
+        <!-- Quelques stats ou faits — modifiez les chiffres et labels -->
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-number">6</span>
+            <span class="stat-label">Mois de formation</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">3</span>
+            <span class="stat-label">Projets réalisés</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Motivé</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">∞</span>
+            <span class="stat-label">Curiosité</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
   </body>
 </html>
