@@ -21,9 +21,7 @@ git status
 git add .
 
 # pour committer
-git commit -m "feat: initialisation structure projet"
+git commit -m "docs: initialisation structure projet"
 
 # pour pousser, confirmer envoi sur github
 git push
-
-
