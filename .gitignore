@@ -23,7 +23,7 @@ git add .
 # pour committer
 git commit -m "feat: initialisation structure projet"
 
-#  pour pousser , confrimer envoi sur github
+# pour pousser, confirmer envoi sur github
 git push
 
 
