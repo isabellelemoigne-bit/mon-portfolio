@@ -26,4 +26,8 @@ git commit -m "feat: initialisation structure projet"
 
 git push
 
-
+git status
+git add
+git add .
+git commit -m "feat: initialisation structure projet"
+git push
