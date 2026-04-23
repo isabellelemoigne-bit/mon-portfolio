@@ -243,7 +243,7 @@ ul {
   color: var(--text-primary);
 }
 .nav-logo span {
-  color: var(--accent-light);
+  color: var(#031955);
 }
 
 .nav-links {
@@ -360,8 +360,8 @@ ul {
   height: 320px;
   object-fit: cover;      /* recadre l'image pour remplir le cercle */
   border-radius: 50%;     /* cercle parfait */
-  border: 4px solid var(--accent-color);
-  box-shadow: 0 0 40px rgba(124, 58, 237, 0.4);
+  border: 4px solid #cedb11;
+  box-shadow: 0 0 40px rgba(248, 20, 218, 0.4);
 }
 
 
