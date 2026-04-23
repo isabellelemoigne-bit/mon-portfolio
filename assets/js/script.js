@@ -21,3 +21,13 @@ document.querySelectorAll(".nav-links a").forEach((link) => {
     navLinks.classList.remove("open");
   });
 });
+window.addEventListener('scroll', () => {
+  // Navbar : fond plus opaque après 50px de scroll
+  navbar.classList.toggle('scrolled', window.scrollY > 50);
+
+
+  // Bouton retour en haut : visible après 400px
+  if (backToTop) {
+    backToTop.classList.toggle('visible', window.scrollY > 400);
+  }
+
