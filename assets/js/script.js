@@ -37,3 +37,20 @@ if (backToTop) {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 }
+// IntersectionObserver : déclenche l'animation quand la section est visible
+let skillsAnimated = false;
+
+const skillObserver = new IntersectionObserver(
+  (entries) => {
+    if (entries[0].isIntersecting && !skillsAnimated) {
+      skillBars.forEach((bar) => {
+        bar.style.width = bar.getAttribute("data-level") + "%";
+      });
+      skillsAnimated = true;
+    }
+  },
+  { threshold: 0.3 },
+);
+
+const skillsSection = document.getElementById("skills");
+if (skillsSection) skillObserver.observe(skillsSection);
