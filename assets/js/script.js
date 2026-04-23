@@ -21,13 +21,19 @@ document.querySelectorAll(".nav-links a").forEach((link) => {
     navLinks.classList.remove("open");
   });
 });
-window.addEventListener('scroll', () => {
+window.addEventListener("scroll", () => {
   // Navbar : fond plus opaque après 50px de scroll
-  navbar.classList.toggle('scrolled', window.scrollY > 50);
-
+  navbar.classList.toggle("scrolled", window.scrollY > 50);
 
   // Bouton retour en haut : visible après 400px
   if (backToTop) {
-    backToTop.classList.toggle('visible', window.scrollY > 400);
+    backToTop.classList.toggle("visible", window.scrollY > 400);
   }
+});
 
+// Bouton retour en haut — scroll fluide vers 0
+if (backToTop) {
+  backToTop.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+}
